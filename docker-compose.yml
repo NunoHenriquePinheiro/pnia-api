@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pniaapi:
+    image: ${DOCKER_REGISTRY-}pniaapi
+    build:
+      context: .
+      dockerfile: PniaApi/Dockerfile
